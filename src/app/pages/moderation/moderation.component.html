@@ -1,0 +1,29 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Content</th>
+        <th>Actions</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let comment of comments">
+        <td>{{ comment.id }}</td>
+        <td>{{ comment.content }}</td>
+        <td>
+          <button *ngIf="!comment.approved" (click)="approveComment(comment)">Approve</button>
+          <button *ngIf="comment.approved" disabled>Approved</button>
+  
+          <button *ngIf="comment.approved === false" (click)="rejectComment(comment)">Reject</button>
+          <button *ngIf="comment.approved === true" disabled>Rejected</button>
+        </td>
+        <td>
+          <span *ngIf="comment.approved === true" style="color: green;">Approved</span>
+          <span *ngIf="comment.approved === false" style="color: red;">Rejected</span>
+          <span *ngIf="comment.approved === undefined" style="color: orange;">Pending</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

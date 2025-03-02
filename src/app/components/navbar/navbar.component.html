@@ -1,0 +1,7 @@
+<nav>
+    <a href="/">Home</a>
+    <a href="/moderation" *ngIf="isLoggedIn()">Moderation</a>
+    <button *ngIf="isLoggedIn()" (click)="logout()">Logout</button>
+    <a href="/login" *ngIf="!isLoggedIn()">Login</a>
+  </nav>
+  
