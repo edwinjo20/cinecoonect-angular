@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+/* 🌍 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌑 Dark Theme Background */
+body {
+    padding-top: 80px; /* Prevents navbar overlap */
+    background: linear-gradient(180deg, #0f172a, #1e3a8a); 
+    color: white; /* Default text color */
+}
+
+/* 🖼️ Image Scaling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 🎬 Main Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔗 Smooth Transition for Links & Buttons */
+a, button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* 🌙 Navbar Styling */
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.9) !important; /* Dark Transparent */
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 🎨 Fix Logo Visibility */
+.logo {
+    height: 40px;
+    filter: brightness(150%) contrast(200%); /* Fix for dark logo */
+    mix-blend-mode: lighten;
+}
+
+/* 🔥 Navbar Brand (CINECONNECT) */
+.navbar-custom .navbar-brand {
+    color: white !important; /* Ensures white text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-custom .navbar-brand:hover {
+    color: #9EB3C2 !important; /* Light blue hover */
+}
+
+/* 🔎 Search Bar Styling */
+.search-bar {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔘 Navbar Buttons */
+.btn-login {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.15); /* Light grey */
+    color: white;
+    border: none;
+}
+.btn-login:hover {
+    background-color: #DF645A;
+    color: white;
+}
+
+/* 🛠️ Login Page Styling */
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.login-container h2 {
+    color: #4a90e2; /* Blue header */
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* 🎭 Moderation Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead {
+    background-color: #222;
+    color: white;
+}
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+.table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+.btn-approve:hover {
+    background-color: #218838;
+}
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+.btn-reject:hover {
+    background-color: #c82333;
+}

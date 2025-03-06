@@ -12,4 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'; // Impor
     <router-outlet></router-outlet> <!-- Load pages dynamically -->
   `
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'cineconnect-admin'; // Add this line
+
+}

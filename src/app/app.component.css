@@ -1,0 +1,6 @@
+/* 🖥️ Fix Navbar Overlap */
+body {
+    padding-top: 80px; /* Prevents navbar from covering content */
+    background-color: #0A0A0A; /* Consistent dark theme */
+    color: white !important; /* Consistent text color */
+}
